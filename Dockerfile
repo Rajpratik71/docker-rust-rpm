@@ -6,4 +6,5 @@ ENV RUSTUP_HOME=/usr/local/rustup \
 
 RUN dnf install -y @development-tools rpm-build; \
     curl https://sh.rustup.rs -sSf | bash -s - -y; \
+    rustup component add rustfmt; \
     rustup target add x86_64-unknown-linux-musl;
