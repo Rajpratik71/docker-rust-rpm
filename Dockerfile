@@ -1,6 +1,6 @@
 FROM fedora
 
-ARG MUSL_PKG=musl-1.1.22
+ARG MUSL_PKG=musl-latest
 
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
